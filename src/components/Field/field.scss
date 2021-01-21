@@ -1,0 +1,19 @@
+.wrapper-field{
+  display: flex;
+  flex-direction: row;
+
+  &-layers--green,
+  &-layers--gray{
+    flex-grow: 1;
+    width: 33%;
+    height: 100vh;
+  }
+
+  &-layers--green{
+    background: #77d31d;
+  }
+
+  &-layers--gray{
+    background: #6c6965;
+  }
+}

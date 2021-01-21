@@ -1,8 +1,15 @@
 import React from 'react'
 
+import Field from './components/Field'
+
+import './app.scss'
+
 const App = () => {
   return (
-    <h1>Game</h1>
+    <>
+      <Field>
+      </Field>
+    </>
   )
 }
 
