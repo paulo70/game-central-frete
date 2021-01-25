@@ -9,7 +9,14 @@ const Home = () => {
 const [ nickname, setNickName ] = useState('')
 
  const handleRegisterGamer = (e) => {
+  e.preventDefault()
 
+  const gamerDB = localStorage['gamer']
+  const gamer = gamerDB ? JSON.parse(gamerDB) : []
+
+  gamer.push( new Gamer(nickname))
+
+  localStorage['gamer'] = JSON.stringify(gamer)
  }
 
  const handleNickName = (e) => {
@@ -28,7 +35,7 @@ const [ nickname, setNickName ] = useState('')
             value = { nickname }
             onChange = { handleNickName }
           />
-          <button></button>
+          <button type = 'submit'>Start</button>
         </form>
       </div>
     </section>
