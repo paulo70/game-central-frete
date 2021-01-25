@@ -1,0 +1,13 @@
+.wrapper-game{
+  max-width: 100%;
+  height: 100vh;
+  background: #1e2434;
+
+  &-content{
+    max-width: 1224px;
+    height: 100vh;
+    margin: 0 auto;
+
+    background: url('../../assets/images/road.gif') no-repeat center;
+  }
+}

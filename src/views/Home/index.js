@@ -39,7 +39,6 @@ const Home = () => {
     },1000)
   }
 
-
   return (
     <section>
       <div className='box-count'>
