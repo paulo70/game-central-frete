@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { navigate, A } from 'hookrouter'
 import Gamer from '../../models/gamer.js'
+import Input from '../../components/input'
 
 import './home.scss'
 
@@ -29,11 +30,11 @@ const [ nickname, setNickName ] = useState('')
         <h1 className='box-welcome-title'>Welcome to car racing game</h1>
         <form className='box-welcome-form' noValidate onSubmit = { handleRegisterGamer }>
           <label className='box-welcome-label'>NickName:
-            <input 
+            <Input 
               type = 'text' 
               placeholder = 'type your nickname' 
               value = { nickname }
-              onChange = { handleNickName }
+              handle = { handleNickName }
             />
           </label>
           <button className='box-welcome-button' type = 'submit'>Start</button>
