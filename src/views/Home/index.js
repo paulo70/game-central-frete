@@ -25,17 +25,18 @@ const [ nickname, setNickName ] = useState('')
 
   return (
     <section>
-      <h1>Welcome to car racing game</h1>
       <div className='box-welcome'>
-        <form noValidate onSubmit = { handleRegisterGamer }>
-          <label>NickName:</label>
-          <input 
-            type = 'text' 
-            placeholder = 'type your nickname' 
-            value = { nickname }
-            onChange = { handleNickName }
-          />
-          <button type = 'submit'>Start</button>
+        <h1 className='box-welcome-title'>Welcome to car racing game</h1>
+        <form className='box-welcome-form' noValidate onSubmit = { handleRegisterGamer }>
+          <label className='box-welcome-label'>NickName:
+            <input 
+              type = 'text' 
+              placeholder = 'type your nickname' 
+              value = { nickname }
+              onChange = { handleNickName }
+            />
+          </label>
+          <button className='box-welcome-button' type = 'submit'>Start</button>
         </form>
       </div>
     </section>

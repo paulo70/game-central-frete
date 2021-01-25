@@ -13,9 +13,42 @@ section{
   bottom: 0;
 
   .box-welcome{
-    background: #fff;
-    padding: 10px;
-    border-radius: 3px;
+    padding: 10px 10px 30px;
     width: 500px;
+
+    background: #ee4c2a;
+    border-radius: 10px;
+
+    &-title{
+      font-size: 2.188em;
+      color: #fff;
+      
+      padding: 0.938em 0;
+    }
+
+    &-form{
+      display: flex;
+      flex-direction: column;
+    }
+
+    &-label{
+      color: #fff;
+      font-weight: bold;
+    }
+
+    &-button{
+      width: 100%;
+      padding: 15px;
+      margin-top: 1.563em;
+      cursor: pointer;
+      border: 0;
+
+      background: #ffae36;
+      border-radius: 10px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.063em;
+    }
   }
 }
