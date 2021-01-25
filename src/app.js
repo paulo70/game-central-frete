@@ -1,14 +1,13 @@
 import React from 'react'
 
-import Field from './components/Field'
-import Home  from './views/Home'
+import Routes from './Routes'
 
 import './app.scss'
 
 const App = () => {
   return (
     <>
-      <Home />
+      <Routes />
     </>
   )
 }
