@@ -1,4 +1,5 @@
 section{
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,6 +43,7 @@ section{
       margin-top: 1.563em;
       cursor: pointer;
       border: 0;
+      outline: none;
 
       background: #ffae36;
       border-radius: 10px;
@@ -50,5 +52,22 @@ section{
       font-weight: bold;
       font-size: 1.063em;
     }
+  }
+}
+
+.box-count{
+  color: #fff;
+  background: #ee4c2a;
+  border-radius: 10px;
+  width: 200px;
+  padding: 20px 20px;
+  position: absolute;
+  top: 50px;
+  left: 20px;
+
+  &-timer{
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 4.063em;
   }
 }
