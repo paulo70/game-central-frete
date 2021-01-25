@@ -1,0 +1,21 @@
+section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  
+  align-items: center;
+  text-align: center;
+  background:url('../../assets/images/car.jpg') 0 0px;
+  background-repeat: no-repeat;
+  background-size:100%;
+  background-size: cover;
+  bottom: 0;
+
+  .box-welcome{
+    background: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    width: 500px;
+  }
+}
