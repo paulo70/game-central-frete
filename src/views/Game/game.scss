@@ -4,6 +4,8 @@
 
   &-content{
     width: 100%;
+    padding-left: 0.625em;
+    padding-right: 0.625em;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -26,11 +28,23 @@
 
     &-infos{
       &-box{
-        padding: 0.625em 0.625em 0.938em;
+        padding: 0.625em 0.625em 1.875em;
+        margin-top: 25%;
+        margin-left: 0.625em;
         
         background: #ee4c2a;
         border-radius: 10px;
         color:#fff;
+
+        &-title{
+          text-align: center;
+        }
+
+        p{
+          text-align: center;
+          line-height: 1.1;
+          margin-top: 0.625em;
+        }
       }
     }
   }

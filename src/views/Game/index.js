@@ -79,7 +79,8 @@ useEffect(() => {
         </div>
         <div className='wrapper-game-content-infos'>
           <div className='wrapper-game-content-infos-box'>
-            <h2>Instructions</h2>
+            <h2 className='wrapper-game-content-infos-box-title'>Instructions</h2>
+            <p>To start game you should use the keyboard using the arrows left, right, up, down or the keys A, S, D</p>
           </div>
         </div>
       </div>
