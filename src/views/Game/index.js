@@ -1,7 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 import Car from '../../assets/images/car.png'
-import { left, right, up, down } from '../../utils/emulator'
+
+import { left, right, up, down, middle } from '../../utils/emulator'
+import Gamers from '../../components/gamers'
 
 import './game.scss'
 
@@ -33,6 +35,21 @@ const handleMoving = (event) => {
       down(car)
       console.log('down')
     break;
+
+    case 65:
+      left(car)
+      console.log('left')
+    break;
+
+    case 68:
+      right(car)
+      console.log('right')
+    break;
+
+    case 83:
+      middle(car)
+      console.log('up')
+    break;
   }
 }
 
@@ -40,22 +57,31 @@ useEffect(() => {
   window.addEventListener('keydown', handleMoving);
 })
 
-
   return (
     <div className='wrapper-game'>
       <div className='wrapper-game-content'>
-        <img 
-          ref = {car}
-          src = {Car}  
-          className= 'wrapper-game-content-img'
-          style={{ 
-            position: "absolute", 
-            left: '50%',
-            right: '50%',
-            top: '50%',
-            bottom: 'auto'
-          }}
+        <div className='wrapper-game-content-gamers'>
+          <Gamers />
+        </div>
+        <div className='wrapper-game-content-road'>
+          <img 
+            ref = {car}
+            src = {Car}  
+            className= 'wrapper-game-content-img'
+            style={{ 
+              position: "absolute", 
+              left: '50%',
+              right: '50%',
+              top: '50%',
+              bottom: 'auto'
+            }}
           />
+        </div>
+        <div className='wrapper-game-content-infos'>
+          <div className='wrapper-game-content-infos-box'>
+            <h2>Instructions</h2>
+          </div>
+        </div>
       </div>
     </div>
   )

@@ -1,0 +1,40 @@
+.box-gamers{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.875em;
+  margin-left: 0.625em;
+  padding: 0.625em 0.625em 0.938em;
+
+  background: #ee4c2a;
+  border-radius: 10px;
+  color:#fff;
+
+  &-title{
+    text-align: center;
+  }
+
+  &-table{
+    text-align: left;
+    
+    padding: 0.625em;
+    margin-top: 1.250em;
+    
+    thead{
+      tr{
+        th{
+          border-bottom: 1px solid #fff;
+          padding-bottom: 0.625em;
+        }
+      }
+    }
+
+    tbody{
+      tr{
+        td{
+          border-bottom: 1px solid #fff;
+          padding: 0.313em;
+        }
+      }
+    }
+  }
+}

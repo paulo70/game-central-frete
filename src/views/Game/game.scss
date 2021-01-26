@@ -1,20 +1,52 @@
 .wrapper-game{
   max-width: 100%;
-  height: 100vh;
   background: #1e2434;
 
   &-content{
-    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: center;
-    max-width: 1224px;
+    flex-direction: row;
+    justify-content: space-between;
     height: 100vh;
-    margin: 0 auto;
 
-    background: url('../../assets/images/road.gif') no-repeat center;
+    &-gamers,
+    &-road,
+    &-infos{
+      flex-grow: 1;
+      width: 33%;
+    }
 
-    &-img{
-      height: 185px;
+    &-gamers{
+      background: #1e2434;
+    }
+
+    &-road{
+      background: url('../../assets/images/road.gif') no-repeat center;
+    }
+
+    &-infos{
+      &-box{
+        padding: 0.625em 0.625em 0.938em;
+        
+        background: #ee4c2a;
+        border-radius: 10px;
+        color:#fff;
+      }
     }
   }
+
+  // &-content{
+  //   position: relative;
+  //   display: flex;
+  //   justify-content: center;
+  //   max-width: 1224px;
+  //   height: 100vh;
+  //   margin: 0 auto;
+
+  //   background: url('../../assets/images/road.gif') no-repeat center;
+
+  //   &-img{
+  //     height: 185px;
+  //   }
+  // }
 }
