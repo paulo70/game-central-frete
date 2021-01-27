@@ -41,6 +41,7 @@ const Home = () => {
         }
 
       },1000)
+      setError('')
     } else{
       setError('Nickname field cannot be blank')
     }
