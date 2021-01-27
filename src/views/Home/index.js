@@ -19,9 +19,10 @@ const Home = () => {
     const gamerDB = localStorage['gamer']
     const gamer = gamerDB ? JSON.parse(gamerDB) : []
 
-    gamer.push( new Gamer(nickname))
-
-    localStorage['gamer'] = JSON.stringify(gamer)
+    if( nickname !== '') {
+      gamer.push( new Gamer(nickname))
+      localStorage['gamer'] = JSON.stringify(gamer)
+    }
   }
 
   const handleNickName = (e) => {
