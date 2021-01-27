@@ -11,17 +11,18 @@
 # Technologies
 This challenge I used framework React, (Js, Jsx) and sass
 
-# home
+# Home
 Start game you should provider an Nickname and press start. We have an validation to know if user did provider or not an nickname.
 These nickname are save in localStorage, and I get it as an list in page game.
 If you did provider an nickname, after press star game button, will start an countdown until 3. After you'll be redirect to game page.
 
 # Game
-In this page you'll could to use the keys A,S and D to control the car and also if you want use the arrows left and right of your keyboard, fell be free.
+In this page you'll could to use the keys A,S and D to control the car and also if you want use the arrows left and right of your keyboard, fell be free. 
+We have two buttons an Pause and other Play button. If you want pause game, you should press pause buttom or Esc. To keep playing just press Play button.
 
 # Prints of Game
-
-# home
+ 
+# Home
 
 ![Alt text](/src/assets/images/home.png?raw=true "Desktop screen")
 
