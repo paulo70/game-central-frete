@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 
+import Nicknames from '../../components/gamersList'
+
 import './gamer.scss'
 
 const Gamers = (props) => {
@@ -34,15 +36,10 @@ const Gamers = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Bob</td>
-        </tr>
-        <tr>
-          <td>Bob</td>
-        </tr>
-        <tr>
-          <td>Bob</td>
-        </tr>
+        <Nicknames 
+          nickname = { nickname }
+          reload = {setLoadNickNames} 
+        />
       </tbody>
      </table>
     </div>

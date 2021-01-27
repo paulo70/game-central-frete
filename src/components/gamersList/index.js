@@ -4,7 +4,7 @@ const ListGamers = (props) => {
   return(
     props.nickname.map((nicknames, index) => (
       <tr key = { index }>
-        <td>{ nicknames.name }</td>
+        <td> Name: { nicknames.name }</td>
       </tr>
     ))
   )
