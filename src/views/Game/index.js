@@ -54,8 +54,8 @@ const handleMoving = (event) => {
   }
 }
 
-function pause() {
-  road.current.style.animationPlayState = 'paused';
+const handlePlay = () => {
+  road.current.style.animationPlayState = 'running'
 }
 
 useEffect(() => {
@@ -87,7 +87,12 @@ useEffect(() => {
         <div className='wrapper-game-content-infos'>
           <div className='wrapper-game-content-infos-box'>
             <h2 className='wrapper-game-content-infos-box-title'>Instructions</h2>
-            <p>To start game you should use the keyboard using the arrows left, right, up or the keys A, S, D</p>
+            <p>To start game you should use the keyboard using the arrows left, right or the keys A, S, D</p>
+            <p>Stop game you should press Esc and to continue press Play button</p>
+
+            <button className = 'wrapper-game-content-infos-box-button'
+              onClick = { handlePlay }> Play
+            </button>
           </div>
         </div>
       </div>
