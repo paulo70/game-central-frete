@@ -4,6 +4,7 @@ import Car from '../../assets/images/car.png'
 
 import { left, right, up, middle, stop } from '../../utils/emulator'
 import Gamers from '../../components/gamers'
+import Button  from '../../components/button'
 
 import './game.scss'
 
@@ -94,8 +95,8 @@ useEffect(() => {
             <p>Start game you should use the keyboard using the arrows left, right or the keys A, S, D</p>
             <p>Pause game you should press Pause button (or Esc) and to continue press Play button</p>
             <div className='wrapper-game-content-infos-box-button'>
-              <button onClick = { handlePlay }> Play </button>
-              <button onClick = { handlePause }> Pause </button>
+              <Button type = 'text' name = 'Pause' handle = {handlePause} />
+              <Button type = 'text' name = 'Play' handle = {handlePlay} />
             </div>
           </div>
         </div>

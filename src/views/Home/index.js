@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { navigate, A } from 'hookrouter'
 import Gamer from '../../models/gamer.js'
 import Input from '../../components/input'
+import Button from '../../components/button'
 
 import './home.scss'
 
@@ -56,13 +57,7 @@ const Home = () => {
               handle = { handleNickName }
             />
           </label>
-          <button 
-            className='box-welcome-button' 
-            type = 'submit'
-            onClick = {() => handleStart()}
-            >
-            Start game
-          </button>
+          <Button type = 'submit' name = 'Start game' handle = {() => handleStart()} />
         </form>
       </div>
     </section>
