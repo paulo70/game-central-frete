@@ -58,6 +58,10 @@ const handlePlay = () => {
   road.current.style.animationPlayState = 'running'
 }
 
+const handlePause = () => {
+  road.current.style.animationPlayState = 'paused'
+}
+
 useEffect(() => {
   window.addEventListener('keydown', handleMoving);
 })
@@ -71,8 +75,8 @@ useEffect(() => {
         
         <div className='wrapper-game-content-road' ref = { road }>
           <img 
-            ref = {car}
-            src = {Car}  
+            ref = { car }
+            src = { Car }  
             className= 'wrapper-game-content-img'
             style={{ 
               position: "absolute", 
@@ -87,12 +91,12 @@ useEffect(() => {
         <div className='wrapper-game-content-infos'>
           <div className='wrapper-game-content-infos-box'>
             <h2 className='wrapper-game-content-infos-box-title'>Instructions</h2>
-            <p>To start game you should use the keyboard using the arrows left, right or the keys A, S, D</p>
-            <p>Stop game you should press Esc and to continue press Play button</p>
-
-            <button className = 'wrapper-game-content-infos-box-button'
-              onClick = { handlePlay }> Play
-            </button>
+            <p>Start game you should use the keyboard using the arrows left, right or the keys A, S, D</p>
+            <p>Pause game you should press Pause button (or Esc) and to continue press Play button</p>
+            <div className='wrapper-game-content-infos-box-button'>
+              <button onClick = { handlePlay }> Play </button>
+              <button onClick = { handlePause }> Pause </button>
+            </div>
           </div>
         </div>
       </div>
