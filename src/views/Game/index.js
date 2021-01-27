@@ -2,14 +2,15 @@ import React, { useState, useEffect, useRef } from 'react'
 
 import Car from '../../assets/images/car.png'
 
-import { left, right, up, middle } from '../../utils/emulator'
+import { left, right, up, middle, stop } from '../../utils/emulator'
 import Gamers from '../../components/gamers'
 
 import './game.scss'
 
 const Game = () => {
 
-const car = useRef(null);
+const car = useRef(null)
+const road = useRef(null)
 
 const handleMoving = (event) => {
 
@@ -45,7 +46,16 @@ const handleMoving = (event) => {
       middle(car)
       console.log('up')
     break;
+
+    case 27:
+      stop(road)
+      console.log('stop')
+    break;
   }
+}
+
+function pause() {
+  road.current.style.animationPlayState = 'paused';
 }
 
 useEffect(() => {
@@ -58,7 +68,8 @@ useEffect(() => {
         <div className='wrapper-game-content-gamers'>
           <Gamers />
         </div>
-        <div className='wrapper-game-content-road'>
+        
+        <div className='wrapper-game-content-road' ref = { road }>
           <img 
             ref = {car}
             src = {Car}  
@@ -72,6 +83,7 @@ useEffect(() => {
             }}
           />
         </div>
+
         <div className='wrapper-game-content-infos'>
           <div className='wrapper-game-content-infos-box'>
             <h2 className='wrapper-game-content-infos-box-title'>Instructions</h2>

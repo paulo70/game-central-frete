@@ -23,7 +23,20 @@
     }
 
     &-road{
-      background: url('../../assets/images/road.gif') no-repeat center;
+      position: relative;
+      animation: anim 0.5s linear infinite;
+      background: url('../../assets/images/spritesheet.png') no-repeat center;
+    }
+
+    @keyframes anim {
+      
+      0%{
+        background-position: 0px;
+      }
+
+      100%{
+        background-position: 0px 0px;
+      }
     }
 
     &-infos{
