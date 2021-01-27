@@ -21,5 +21,19 @@ In this page you'll could to use the keys A,S and D to control the car and also 
 
 # Prints of Game
 
+# home
 
 ![Alt text](/src/assets/images/home.png?raw=true "Desktop screen")
+
+# Game
+
+![Alt text](/src/assets/images/game.png?raw=true "Desktop screen")
+
+# Home Mobile
+
+![Alt text](/src/assets/images/home-mobile.png?raw=true "Desktop screen")
+
+# Game Mobile
+
+![Alt text](/src/assets/images/game-mobile.png?raw=true "Desktop screen")
+ 
