@@ -19,7 +19,7 @@ These nickname are save in localStorage, and I get it as an list in page game.
 If you did provider an nickname, after press start game button will start an countdown until 3. After you'll be redirect to game page.
 
 # Game
-In this page you'll could to use the keys A,S and D to control the car and also if you want use the arrows left and right of your keyboard, fell be free. 
+In this page you'll could to use the keys A,S and D to control the car and also if you want use the arrows left and right of your keyboard, feel be free. 
 We have two buttons an Pause and other Play button. If you want pause game, you should press pause buttom or Esc. To keep playing just press Play button.
 
 # Prints of Game
