@@ -71,19 +71,36 @@
       }
     }
   }
+}
 
-  // &-content{
-  //   position: relative;
-  //   display: flex;
-  //   justify-content: center;
-  //   max-width: 1224px;
-  //   height: 100vh;
-  //   margin: 0 auto;
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .wrapper-game{
+    &-content{
+      flex-direction: column;
 
-  //   background: url('../../assets/images/road.gif') no-repeat center;
+      &-gamers,
+      &-road,
+      &-infos{
+        width: 100%;
+      }
 
-  //   &-img{
-  //     height: 185px;
-  //   }
-  // }
+      &-gamers{
+        display: none;
+      }
+
+      &-road{
+        background: url('../../assets/images/spritesheet.png') no-repeat 0 30px;
+      }
+
+      &-infos{
+        &-box{
+          margin-left: 0;
+          &-title,
+          p {
+            display: none;
+          }
+        }
+      }
+    }
+  }
 }
