@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 
 import Car from '../../assets/images/car.png'
 
-import { left, right, up, down, middle } from '../../utils/emulator'
+import { left, right, up, middle } from '../../utils/emulator'
 import Gamers from '../../components/gamers'
 
 import './game.scss'
@@ -29,11 +29,6 @@ const handleMoving = (event) => {
     case 38:
       up(car)
       console.log('up')
-    break;
-
-    case 40:
-      down(car)
-      console.log('down')
     break;
 
     case 65:
@@ -80,7 +75,7 @@ useEffect(() => {
         <div className='wrapper-game-content-infos'>
           <div className='wrapper-game-content-infos-box'>
             <h2 className='wrapper-game-content-infos-box-title'>Instructions</h2>
-            <p>To start game you should use the keyboard using the arrows left, right, up, down or the keys A, S, D</p>
+            <p>To start game you should use the keyboard using the arrows left, right, up or the keys A, S, D</p>
           </div>
         </div>
       </div>

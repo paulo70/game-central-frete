@@ -1,1 +1,1 @@
-export { left, right, up, down, middle } from './controle.js'
+export { left, right, up, middle } from './controle.js'
