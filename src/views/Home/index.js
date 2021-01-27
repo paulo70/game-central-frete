@@ -11,6 +11,7 @@ const Home = () => {
 
   const [ nickname, setNickName ] = useState('')
   const [ count, setCount ] = useState(0)
+  const [ error, setError ] = useState('')
 
   const handleRegisterGamer = (e) => {
     e.preventDefault()
@@ -29,15 +30,20 @@ const Home = () => {
 
   const handleStart = () => {
     let seconds = 4
-    const timer = setInterval(() => {
-      setCount( seconds = seconds - 1 )
 
-      if( seconds === 0 ) {
-        clearInterval(timer)
-        navigate('/game')
-      }
+    if(nickname !== ''){
+      const timer = setInterval(() => {
+        setCount( seconds = seconds - 1 )
 
-    },1000)
+        if( seconds === 0 ) {
+          clearInterval(timer)
+          navigate('/game')
+        }
+
+      },1000)
+    } else{
+      setError('Nickname field cannot be blank')
+    }
   }
 
   return (
@@ -61,6 +67,9 @@ const Home = () => {
                 handle = { handleNickName }
               />
             </label>
+            
+            { error ? ( <span className='error'>{error}</span> ) : '' }
+            
             <Button type = 'submit' name = 'Start game' handle = {() => handleStart()} />
           </form>
         </div>
