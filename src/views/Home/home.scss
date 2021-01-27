@@ -1,75 +1,82 @@
 section{
   width: 100%;
-  overflow-x: hidden;
+  min-height: 100vh;
+  padding: 0 0.625em;
   position: relative;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  min-height: 100vh;
   
   align-items: center;
-  text-align: center;
   background:url('../../assets/images/car.jpg') 0 0px;
   background-repeat: no-repeat;
   background-size:100%;
   background-size: cover;
   bottom: 0;
 
-  .box-welcome{
-    padding: 10px 10px 30px;
-    width: 500px;
-
-    background: #ee4c2a;
-    border-radius: 10px;
-
-    &-title{
-      font-size: 2.188em;
-      color: #fff;
-      
-      padding: 0.938em 0;
-    }
-
-    &-form{
-      display: flex;
-      flex-direction: column;
-    }
-
-    &-label{
-      color: #fff;
-      font-weight: bold;
-    }
-
-    &-button{
-      width: 100%;
-      padding: 15px;
-      margin-top: 1.563em;
-      cursor: pointer;
-      border: 0;
-      outline: none;
-
-      background: #ffae36;
-      border-radius: 10px;
-      color: #fff;
-      text-transform: uppercase;
-      font-weight: bold;
-      font-size: 1.063em;
-    }
+  .box-children{
+    flex-grow: 1;
   }
-}
 
-.box-count{
-  color: #fff;
-  background: #ee4c2a;
-  border-radius: 10px;
-  width: 200px;
-  padding: 20px 20px;
-  position: absolute;
-  top: 50px;
-  left: 20px;
+  .box-children{
+    &-count{
+      width: 200px;
+      padding: 1.250em 1.250em;
+      position: absolute;
+      top: 20px;
+      
+      color: #fff;
+      background: #ee4c2a;
+      border-radius: 10px;
+      text-align: center;
 
-  &-timer{
-    display: inline-block;
-    margin-top: 20px;
-    font-size: 4.063em;
+      &-timer{
+        display: inline-block;
+        
+        font-size: 4.063em;
+      }
+    }
+
+    &-welcome{
+      padding: 10px 10px 30px;
+      width: 500px;
+
+      background: #ee4c2a;
+      border-radius: 10px;
+      text-align: center;
+
+      &-title{
+        font-size: 2.188em;
+        color: #fff;
+        
+        padding: 0.938em 0;
+      }
+
+      &-form{
+        display: flex;
+        flex-direction: column;
+      }
+
+      &-label{
+        color: #fff;
+        font-weight: bold;
+      }
+
+      &-button{
+        width: 100%;
+        padding: 15px;
+        margin-top: 1.563em;
+        cursor: pointer;
+        border: 0;
+        outline: none;
+
+        background: #ffae36;
+        border-radius: 10px;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.063em;
+      }
+    }
   }
 }

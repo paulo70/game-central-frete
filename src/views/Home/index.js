@@ -42,23 +42,28 @@ const Home = () => {
 
   return (
     <section>
-      <div className='box-count'>
-        <h2>Are you ready?</h2>
-        <span className='box-count-timer'>{ count }</span>
+      <div className='box-children'>
+        <div className='box-children-count'>
+          <h2>Are you ready?</h2>
+          <span className='box-children-count-timer'>{ count }</span>
+        </div>
       </div>
-      <div className='box-welcome'>
-        <h1 className='box-welcome-title'>Welcome to car racing game</h1>
-        <form className='box-welcome-form' noValidate onSubmit = { handleRegisterGamer }>
-          <label className='box-welcome-label'>NickName:
-            <Input 
-              type = 'text' 
-              placeholder = 'type your nickname' 
-              value = { nickname }
-              handle = { handleNickName }
-            />
-          </label>
-          <Button type = 'submit' name = 'Start game' handle = {() => handleStart()} />
-        </form>
+
+      <div className='box-children'>
+        <div className='box-children-welcome'>
+          <h1 className='box-children-welcome-title'>Welcome to car racing game</h1>
+          <form className='box-children-welcome-form' noValidate onSubmit = { handleRegisterGamer }>
+            <label className='box-children-welcome-label'>NickName:
+              <Input 
+                type = 'text' 
+                placeholder = 'type your nickname' 
+                value = { nickname }
+                handle = { handleNickName }
+              />
+            </label>
+            <Button type = 'submit' name = 'Start game' handle = {() => handleStart()} />
+          </form>
+        </div>
       </div>
     </section>
   )
