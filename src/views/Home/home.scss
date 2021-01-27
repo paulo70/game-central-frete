@@ -80,3 +80,19 @@ section{
     }
   }
 }
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  section {
+    flex-direction: column;
+
+    .box-children{
+      &-count{
+        position: relative;
+      }
+      &-welcome{
+        width: 100%;
+      }
+    }
+  }
+}
