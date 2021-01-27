@@ -6,7 +6,9 @@
 
 2) After clone you should type this command in you terminal => npm install
 
-3) Open your browser and type => http://localhost:3000/game
+3) After npm install you run => npm run dev
+
+4) Open your browser and type => http://localhost:3000/game
 
 # Technologies
 This challenge I used framework React, (Js, Jsx) and sass
